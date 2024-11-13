@@ -5,13 +5,6 @@ const contenidoTemptlate = document.getElementById("contenidoTemptlate");
 window.onload = () => {
     vista = new Vista();
     mostrarMainContenido()
-    /*document
-    .getElementById("abrir")
-    .addEventListener("click", mostrarMenu)
-    document
-    .getElementById("b-about")
-    .addEventListener("click", mostrarAbout)
-*/
 };
 
 const nav = document.querySelector('#nav');
@@ -32,9 +25,9 @@ function mostrarMenu() {
     vista.mostrarPlantilla("menu", "mainContenido")
 }
 
-// function mostrarMainContenido() {
-//     vista.mostrarPlantilla("inicio", "mainContenido")
-// }
+function mostrarMainContenido() {
+    vista.mostrarPlantilla("inicio", "mainContenido")
+}
 
 // function mostrarAbout() {
 //     vista.mostrarPlantilla("about", "mainContenido")
